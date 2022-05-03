@@ -1,2 +1,5 @@
-# teaching-bioimage-analysis-python
-A place to collect information used in lectures, demos, workshops, etc.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Teaching Bioimage Analysis with Python
+
+List of resources used during different courses, workshops, events, etc.
