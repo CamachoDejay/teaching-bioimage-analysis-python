@@ -88,7 +88,7 @@ How to install it (not live): please follow the [instructions here to install VS
 
 S2.1 Open VS Code:
 
-* Go to Windows icon -> search for "Code" -> open Visual Studio Code
+* Go to Windows icon -> search for ```Code``` -> open Visual Studio Code
 
 S2.2 Cereate a new folder so we can work on it:
 
@@ -100,7 +100,7 @@ S2.3 Open the folder in VS Code using
 
 S2.4 Create a new python file by:
 
-* create New File -> name it "hellow.py"
+* create **New File** -> name it ```hellow.py```
 * Install the [recommended extensions](https://code.visualstudio.com/docs/languages/python)
 * in the file write: ```print("hello students")```
 * run the file via the arrow on the top right
@@ -109,9 +109,9 @@ S2.4 Create a new python file by:
 S2.5 Select an interpreter (aka virtual environment)
 
 * use Ctr + Shift + P to open the command palleteinter
-* look for interpreter
-* choose Python: Select Interpreter
-* look for the bias-env
+* look for ```interpreter```
+* choose ```Python: Select Interpreter```
+* look for the ```bias-env```
 
 S2.6 Run again the file
 
@@ -129,8 +129,8 @@ S3.1 Crete new jupyter book in VS Code
 
 * Alternatively
   * use Ctr + Shift + P to open the command palleteinter
-  * look for jupyter
-  * choose Python: Create> New Jupyter Notebook
+  * look for ```jupyter```
+  * choose ```Python: Create: New Jupyter Notebook```
   * use:  File -> Save to save the file with ```.ipynb``` extension
 * Select your kernel AKA virtual environment
 * Create a cell with simple math:
@@ -141,10 +141,10 @@ b = 6
 a+b
 ```
 
-* Try to run the cell and you will notice a complaint from VS Code. We better install ipykernel.
+* Try to run the cell and you will notice a complaint from VS Code. We better install ```ipykernel```.
 * Click on Cancel
 
-S3.2 Installing ipykernel, our first package
+S3.2 Installing ```ipykernel```, our first package
 
 * Go to the Anaconda Prompt
   * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
