@@ -143,6 +143,20 @@ S2.6 Run again the file
 
 Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this great article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
 
+## installing jupyterlab in our virtual environment
+
+This step can be skiped in this demo because we already have jupyterlab installed in our base conda environment. However, if this is not the case you might have to install it separately via:
+
+* Go to the Anaconda Prompt
+  * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
+
+```conda install -c conda-forge jupyterlab```
+
+To test that it is properly installed you can run this in the command line
+
+```where jupyter```
+
+
 ## Step 3 Using VS Code to create and run Jupyter Notebooks
 
 You can go over [this guide to get many details on how to use Jupyter notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks). Below a practical example.
@@ -168,7 +182,7 @@ a+b
 * Try to run the cell and you will notice a complaint from VS Code. We better install ```ipykernel```.
 * Click on Cancel
 
-S3.2 Installing ```ipykernel```, our first package
+S3.2 Installing ```ipykernel```
 
 * Go to the Anaconda Prompt
   * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
