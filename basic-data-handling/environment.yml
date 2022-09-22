@@ -1,0 +1,11 @@
+name: bias-env-test
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - jupyterlab
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
