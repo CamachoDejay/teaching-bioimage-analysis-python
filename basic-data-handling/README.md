@@ -185,6 +185,7 @@ Now lets move to the example books in this repo.
 
 Now you are set to a great start. Feel free to play with this notebooks with basic Python if you want to get familiar with the language. There are many cool websites and videos including.
 
-* youtube series by google team on Python
-* RealPython website
-* youtube series by Neubias Academy on using Python for image analysis
+* YouTube series by google team on Python: [day 1 link](https://youtu.be/tKTZoB2Vjuk)
+* [RealPython website](https://realpython.com/)
+* YouTube series by Neubias Academy on using [Python for image analysis](https://youtu.be/2KF8vBrp3Zw)
+* PoL Dresden [course on BioImage analysis using Python](https://github.com/BiAPoL/Bio-image_Analysis_with_Python)
