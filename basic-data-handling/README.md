@@ -1,48 +1,58 @@
 # Basic data handling in python
 
-What to do after I get tables (e.g. ".csv") form FIJI or any other image analysis software
+Throughout this session we will concentrate on what to do after we get results tables (e.g. ".csv") form FIJI or any other image analysis software. Most people would take the tables, load them in a spreadsheet program, such as Microsfots Excel, and then continue from there with figure generation and statistical testing. Here I showcase the option of using Python, in combination with Jupyter Notebooks for these tasks.
 
 ## Learning outcome
 
-Basic understanding of Python for data exploration
+* Basic understanding of Python for data exploration
 
-How to install Data Science packages using conda environments
+* How to install Data Science packages using conda environments
 
-How to use VS Code to run and create jupyter notebooks
+* How to use VS Code to run and create Jupyter Notebooks
 
-How to store and share your environment via .yml files
+* How to store and share your environment via ```.yml``` files
 
-How to load ".csv" files
+* How to load ```.csv``` files
 
-How to concatenate (combine) data tables
+* How to concatenate (combine) data tables
 
-How to do basic plots, e.g. scatter, bars and violin plots
+* How to export data tables into ```.csv``` files or Excel sheets
+
+* How to do basic plots, e.g. scatter, bars and violin plots
 
 ## Prerequisites
 
-To save time, students in this demo will not have to install [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt) or [VS Code](https://code.visualstudio.com/docs). However, we write down some instructions on how to do this below.
+To save time during the session, students will hace access to a work station with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), [VS Code](https://code.visualstudio.com/docs), and [git](link to github TODO) command line tools. However, we write some instructions for those following off site.
 
-## What is python
+## What is python?
 
 This is better answered by looking at online resources such as: https://www.python.org/doc/essays/blurb/
 
-In the context of our course the most important question is [why is python used in data science.](https://learnpython.com/blog/why-python-used-for-science/)
+In the context of our course the most important question is [why is python used in data science?](https://learnpython.com/blog/why-python-used-for-science/)
 
-## How to install python via conda
+I hope that by the end of the session you will understand why so many people are moving to Python to do data analysis tasks, from the most basic to the most advanced.
 
-To make things easier we will be using [conda to install python and manage our virtual environments.](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) Think of a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) as a box (directory) that contains a specific collection tools (e.g. python + packages) that you have installed. The good thing is that you can have different boxes/environments, and if you change one environment, your other environments are not affected. To work with them we will then "activate" the box we want to use.
+## How to install Python via conda
+
+To make things easier we will be using [conda to install python and manage our virtual environments.](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) Think of a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) as a box (directory) that contains a specific collection tools (e.g. Python + packages) that you have installed. The good thing is that you can have different boxes/environments, and if you change one environment, your other environments are not affected. To work with them we will then "activate" the box we want to use.
+
+After working with FIJI during the course, the concept of virtual environments is very similar as having multiple versions of FIJI by keeping different copies in different folders.
 
 ## Step 1: Creating a conda env with python 3.9
+
+**Prerequisite** to go over these steps you need to have installed ```conda```, and the anaconda prompt on your computer.
 
 S1.1 Open an Anaconda Promt:
 
 * Go to Windows icon -> search for "anaconda" -> open Anaconda Prompt (Anaconda 3)
 
-S1.2 Create a new conda environment for python using this command in the promt:
+S1.2 Create a new conda environment for Python using this command in the promt:
 
 ```
 > conda create -y -n bias-env -c conda-forge python=3.9
 ```
+
+After ```conda``` has done its job you have created a new "box" containing a copy of Python version 3.9. The name of this environment is ```bias-env``` and as ```conda```channel we have used ```conda-forge```. Think of a conda channel as buying your products from a specific shop. ```conda-forge``` is my favorite store, but this discussion is a bit out of the scope of the session.
 
 S1.3 Now activate your conda environment:
 
@@ -50,14 +60,15 @@ S1.3 Now activate your conda environment:
 > conda activate bias-env
 ```
 
-S1.4 Let us check the enviornment, use the command:
+S1.4 Let us check the enviornment, by asking what python is available. Use the command:
 
 ```
 > which python
+
 Python 3.9.xx | packaged by conda-forge |...
 ```
 
-S1.5 Activate Python, use the command:
+S1.5 Activate Python. Use the command:
 
 ```
 > python
@@ -72,7 +83,18 @@ S1.6 lets do some basic math
 9
 ```
 
-S1.7 lets get out of python
+S1.7 lets do some basic print statements
+```python
+>>> print("Hello")
+Hello
+>>> name = "Rafa"
+>>> print("Hello " + name)
+Hello Rafa
+
+```
+This should remind you of the way we worked with strings in IJ Macro language
+
+S1.8 lets get out of python
 
 ```python
 >>> quit()
@@ -80,11 +102,13 @@ S1.7 lets get out of python
 
 ## VS Code
 
-VS Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux. Using its extensions it can support Python and Jupyter books.
+VS Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux. Using its extensions it is a great tool for Python and Jupyter books.
 
 How to install it (not live): please follow the [instructions here to install VS Code](https://code.visualstudio.com/docs/setup/setup-overview), and the [nice documentation here to have it ready for python.](https://code.visualstudio.com/docs/languages/python).
 
 ## Step 2 Open VS Code and create a Python file
+
+**Prerequisite** I assume you already have VS Code installed.
 
 S2.1 Open VS Code:
 
@@ -100,7 +124,7 @@ S2.3 Open the folder in VS Code using
 
 S2.4 Create a new python file by:
 
-* create **New File** -> name it ```hellow.py```
+* create **New File** -> name it ```hello.py```
 * Install the [recommended extensions](https://code.visualstudio.com/docs/languages/python)
 * in the file write: ```print("hello students")```
 * run the file via the arrow on the top right
@@ -108,7 +132,7 @@ S2.4 Create a new python file by:
 
 S2.5 Select an interpreter (aka virtual environment)
 
-* use Ctr + Shift + P to open the command palleteinter
+* use Ctr + Shift + P to open the command pallete
 * look for ```interpreter```
 * choose ```Python: Select Interpreter```
 * look for the ```bias-env```
@@ -153,7 +177,14 @@ S3.2 Installing ```ipykernel```, our first package
 
 S3.3 Run the Jupyter Notebook in VS Code once again
 
+## To continue working on our use case
+
+Now lets move to the example books in this repo.
 
 ## Where to go next
 
-Add here link to different resources
+Now you are set to a great start. Feel free to play with this notebooks with basic Python if you want to get familiar with the language. There are many cool websites and videos including.
+
+* youtube series by google team on Python
+* RealPython website
+* youtube series by Neubias Academy on using Python for image analysis
