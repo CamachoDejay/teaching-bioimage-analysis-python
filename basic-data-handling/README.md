@@ -22,7 +22,7 @@ Throughout this session we will concentrate on what to do after we get results t
 
 ## Prerequisites
 
-To save time during the session, students will hace access to a work station with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), [VS Code](https://code.visualstudio.com/docs), and [git](link to github TODO) command line tools. However, we write some instructions for those following off site.
+To save time during the session, students will hace access to a work station with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), [VS Code](https://code.visualstudio.com/docs), and [git](https://github.com/git-guides/install-git) command line tools. However, we write some instructions for those following off site.
 
 ## What is python?
 
@@ -143,7 +143,7 @@ S2.6 Run again the file
 
 Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this great article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
 
-## installing jupyterlab in our virtual environment
+## Installing jupyterlab in our virtual environment
 
 This step can be skiped in this demo because we already have jupyterlab installed in our base conda environment. However, if this is not the case you might have to install it separately via:
 
