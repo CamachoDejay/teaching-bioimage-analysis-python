@@ -1,7 +1,6 @@
+from skimage import data
 import napari
-from skimage.data import astronaut
 
-# create the viewer and display the image
-viewer = napari.Viewer()
-new_layer = viewer.add_image(astronaut(), rgb=True)
-napari.run()
+# start the viewer and add the image data
+viewer = napari.view_image(data.astronaut(), rgb=True)
+napari.run()  # start the event loop and show viewer
