@@ -3,8 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.9
+  # image viever: napari, also includes skimage
   - napari
+  # related to jupyter notebooks
   - ipykernel
   - jupyterlab
+  # data handling and plotting
   - pandas
   - matplotlib

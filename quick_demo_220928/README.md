@@ -1,40 +1,40 @@
 # Quick demo on image processing using python
 
-I will show case how to do a basic image analysis pipeline suing python tools and napari as a viewer of microscopy data.
+I will show case how to do a basic image analysis pipeline using Python packages such as skimage and napari.
 
 ## Learning outcome
 
 * Basic understanding of Napari as an image viewer
 
-* How to install iamge processing packages
+* How to install image processing packages
 
 * How to do a basic image analysis pipeline including
   * Image loading
   * Image exploration
   * Thresholding
   * Filtering - background substraction
-  * Basic quantification based on image mask - labels
+  * Basic quantification based on image mask/labels
 
 ## Prerequisites
 
-To save time during the session, students will hace access to a work station with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), [VS Code](https://code.visualstudio.com/docs), and [git](https://github.com/git-guides/install-git) command line tools. However, we write some instructions for those following off site.
+To save time during the session, I assume that students have access to a computer with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), and [git](https://github.com/git-guides/install-git) command line tools. Further, I will be using [VS Code](https://code.visualstudio.com/docs) to go over the material.
 
 ## How to install required packages
 
 To make things easier we will be using [conda to install python and manage our virtual environments.](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) Think of a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) as a box (directory) that contains a specific collection tools (e.g. Python + packages) that you have installed. The good thing is that you can have different boxes/environments, and if you change one environment, your other environments are not affected. To work with them we will then "activate" the box we want to use.
 
-## Creating a conda env with python 3.9
+## Creating a conda env via a yml file
 
 **Prerequisite** to go over these steps you need to have installed ```conda```, and the anaconda prompt on your computer.
 
 S1.1 Open an Anaconda Promt:
 
-* Go to Windows icon -> search for "anaconda" -> open Anaconda Prompt (Anaconda 3)
+* Open Anaconda Prompt (Anaconda 3)
 
 S1.2 Create a new conda environment for Python using this command in the promt. First navigate to the folder **quick_demo_220928**, then:
 
 ```
-> conda env create -f environment.yml python=3.9
+> conda env create -f environment.yml
 ```
 
 After ```conda``` has done its job you have created a new "box" containing a copy of Python version 3.9. The name of this environment is ```demo-env``` and as ```conda```channel we have used ```conda-forge```. Think of a conda channel as buying your products from a specific shop. ```conda-forge``` is my favorite store, but this discussion is a bit out of the scope of the session.
@@ -43,6 +43,11 @@ S1.3 Now activate your conda environment:
 
 ```
 > conda activate demo-env
+```
+
+S1.4 Test python
+```
+> python --version
 ```
 
 ## VS Code
@@ -55,14 +60,15 @@ How to install it (not live): please follow the [instructions here to install VS
 
 Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this great article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
 
-## Installing jupyterlab in our virtual environment
+## Installing jupyterlab
 
-This step can be skiped in this demo because we already have jupyterlab installed in our ´´´demo-env´´´. However, if this is not the case you might have to install it separately via:
+This step can be skiped in this demo because we already have jupyterlab installed in our ```demo-env```. However, if this is not the case you might have to install it separately via:
 
 * Go to the Anaconda Prompt
-  * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
-
-```conda install -c conda-forge jupyterlab```
+  
+```
+> conda install -c conda-forge jupyterlab
+```
 
 ## Step 3 Using VS Code to create and run Jupyter Notebooks
 
@@ -86,9 +92,7 @@ b = 6
 a+b
 ```
 
-* Try to run the cell and you might notice a complaint from VS Code. Make sure you install ```ipykernel```. This is already done in the demo-env
-
-S3.3 Run the Jupyter Notebook in VS Code once again
+* Try to run the cell and you might notice a complaint from VS Code. Make sure you installed ```ipykernel```. This is already done in the demo-env
 
 ## To continue working on our use case
 
