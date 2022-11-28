@@ -4,10 +4,8 @@
 
 List of resources used during different courses, workshops, events, etc.
 
-## Basic Introduction to Data Hanlding in Python
+## GOTBIN presentation and demo
 
-* The material for the intro can be found [here](./basic-data-handling).
+* The material used for the presentation can be found here: TODO
 
-## Quick demo on image analysis using Python
-
-* The material for the quick demo can be found [here](./quick_demo_220503).
+* The material for the quick demo can be found [here](./quick_demo_gotbin_nov_2022).
