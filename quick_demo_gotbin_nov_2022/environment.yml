@@ -12,7 +12,8 @@ dependencies:
   # data handling and plotting
   - pandas
   - matplotlib
-  -pip
+  # some pip dependencies
+  - pip
   - pip:
     - aicspylibczi
 
