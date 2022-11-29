@@ -17,7 +17,7 @@ I will show case how to do a basic image analysis pipeline using Python packages
 
 ## Prerequisites
 
-To save time during the session, I assume that students have access to a computer with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), and [git](https://github.com/git-guides/install-git) command line tools. Further, I will be using [VS Code](https://code.visualstudio.com/docs) to go over the material.
+To save time during the session, I assume that participants have access to a computer with already installed [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (Anaconda Prompt), and [git](https://github.com/git-guides/install-git) command line tools. Further, I will be using [VS Code](https://code.visualstudio.com/docs) to go over the material.
 
 ## How to install required packages
 
@@ -31,7 +31,7 @@ S1.1 Open an Anaconda Promt:
 
 * Open Anaconda Prompt (Anaconda 3)
 
-S1.2 Create a new conda environment for Python using this command in the promt. First navigate to the folder **quick_demo_220928**, then:
+S1.2 Create a new conda environment for Python using this command in the promt. **Important!**, first navigate to the folder **quick_demo_gotbin_nov_2022**, then:
 
 ```
 > conda env create -f environment.yml
@@ -52,13 +52,13 @@ S1.4 Test python
 
 ## VS Code
 
-VS Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux. Using its extensions it is a great tool for Python and Jupyter books.
+VS Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux. Using its extensions it is a great tool for Python and Jupyter notebooks.
 
-How to install it (not live): please follow the [instructions here to install VS Code](https://code.visualstudio.com/docs/setup/setup-overview), and the [nice documentation here to have it ready for python.](https://code.visualstudio.com/docs/languages/python).
+You are welcome to use any IDE. If you want to use VS Code then please follow the [instructions here to install VS Code](https://code.visualstudio.com/docs/setup/setup-overview), and the [nice documentation here to have it ready for python.](https://code.visualstudio.com/docs/languages/python).
 
 ## What is a Jupyter Notebook
 
-Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this great article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
+Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
 
 ## Installing jupyterlab
 
@@ -92,7 +92,7 @@ b = 6
 a+b
 ```
 
-* Try to run the cell and you might notice a complaint from VS Code. Make sure you installed ```ipykernel```. This is already done in the demo-env
+* Try to run the cell and you might notice a complaint from VS Code. Make sure you installed ```ipykernel```. This is already done in the ```demo-env```
 
 ## To continue working on our use case
 
