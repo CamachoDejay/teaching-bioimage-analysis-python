@@ -66,6 +66,9 @@ S1.4 Let us check the enviornment, by asking what python is available. Use the c
 > which python
 
 Python 3.9.xx | packaged by conda-forge |...
+
+> python --version
+
 ```
 
 S1.5 Activate Python. Use the command:
