@@ -192,6 +192,10 @@ S3.2 Installing ```ipykernel```
 * run the command: ```conda install ipykernel```
 * say yes via ```y```
 
+Then we add the current environment as a jupyter kernel
+
+```ipython kernel install --user --name=bias-env```
+
 S3.3 Run the Jupyter Notebook in VS Code once again
 
 ## To continue working on our use case

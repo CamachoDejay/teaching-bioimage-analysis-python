@@ -3,9 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.9
   - ipykernel
   - jupyterlab
   - pandas
   - matplotlib
   - seaborn
-  - scipy
+  - scipy7
