@@ -1,4 +1,4 @@
-name: bias-env-test
+name: bias-env
 channels:
   - conda-forge
   - defaults
