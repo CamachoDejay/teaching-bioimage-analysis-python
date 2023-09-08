@@ -159,6 +159,10 @@ To test that it is properly installed you can run this in the command line
 
 ```where jupyter```
 
+### Make the virtual environment available to JupyterLab
+To make our current environment (kernel) available to JupyterLab we can use:
+
+```ipython kernel install --user --name=bias-env```
 
 ## Step 3 Using VS Code to create and run Jupyter Notebooks
 
@@ -182,17 +186,19 @@ b = 6
 a+b
 ```
 
-* Try to run the cell and you will notice a complaint from VS Code. We better install ```ipykernel```.
-* Click on Cancel
+* Try to run the cell.
 
-S3.2 Installing ```ipykernel```
+**Note** If you forgot the ipython kernel step you will notice a complaint from VS Code. In this case make sure you have ```ipykernel``` installed.
+
+
+S3.2 Optional Installing ```ipykernel```
 
 * Go to the Anaconda Prompt
   * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
 * run the command: ```conda install ipykernel```
 * say yes via ```y```
 
-Then we add the current environment as a jupyter kernel
+Then we make the current environment available as a jupyter kernel
 
 ```ipython kernel install --user --name=bias-env```
 
