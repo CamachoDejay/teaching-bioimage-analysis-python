@@ -14,6 +14,7 @@ dependencies:
   # data handling and plotting
   - pandas
   - matplotlib
+  - seaborn
   # pip packages
   - pip:
     - oiffile[all]
