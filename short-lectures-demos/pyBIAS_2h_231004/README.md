@@ -38,14 +38,14 @@ This should open Python in your terminal. Notice the “>>>” in the prompt. To
 ### 1.2) Create a virtual environment that will be used to install Jupyter Lab. 
 **Note** that we will use python 3.9 to be compatible with Napari. Go to the Anaconda Prompt and run the command:
 ```
-> conda create -y -n bias-env -c conda-forge python=3.9
+> conda create -y -n pybias-env -c conda-forge python=3.9
 ```
 ### 1.3) Activate environment
-Once the virtual environment with the name bias-env is created, then you can activate it to install the desired packages.
+Once the virtual environment with the name pybias-env is created, then you can activate it to install the desired packages.
 ```
-> conda activate bias-env
+> conda activate pybias-env
 ```
-**Note** how the terminal now starts with (bias-env)
+**Note** how the terminal now starts with (pybias-env)
 ### 1.4) Install JupyterLab 
 Now we install JupyterLab in the environment using
 ```
@@ -54,7 +54,7 @@ Now we install JupyterLab in the environment using
 ### 1.5) Make virtual environment available to JupyterLab
 To make our current environment (kernel) available to JupyterLab we use:
 ```
-> ipython kernel install --user --name=bias-env
+> ipython kernel install --user --name=pybias-env
 ```
 ## JupyterLab’s web interface
 When we launch a Jupyter Notebook, we use the “IPython Kernel” in the background, a library that offers an interactive command line interface. You can think of IPython Kernel as the computer engine that runs the code contained in a Notebook document. ipykernel is installed alongside JupyterLab, and that is why we can use it directly. 
@@ -67,7 +67,7 @@ Open the anaconda prompt and navigate to the desired folder. Below is an example
 > cd Documents/jlab
 ```
 ### 2.2) Activate appropiate environment
-Make sure you have activated the ```bias-env``` environment (see above installation procedure). Then run the command:
+Make sure you have activated the ```pybias-env``` environment (see above installation procedure). Then run the command:
 ```
 > jupyter lab
 ```
@@ -80,7 +80,7 @@ You can find great documentation on [how to create Notebooks using JupyterLab](h
 
 3.2) Go to File > New > Notebook
 
-3.3) Select the Kernel we have created: ```bias-env```
+3.3) Select the Kernel we have created: ```pybias-env```
 
 3.4) Go to File > Save Notebook to rename your file as desired: e.g., ```Example.ipynb```
 
@@ -96,9 +96,9 @@ A bare Jupyter Notebook is not going to take us very far if we try to solve a BI
 
 5.1) Go to the Anaconda Prompt
 
-5.2) Activate the bias-env
+5.2) Activate the pybias-env
 ```
-> conda activate bias-env
+> conda activate pybias-env
 ```
 
 5.3) Install scikit-image, matplotlib, and pandas by
@@ -115,7 +115,7 @@ A bare Jupyter Notebook is not going to take us very far if we try to solve a BI
 
 6.1) Activate the environment to export, e.g. our Jupyter.env
 ```
-> conda activate bias-env
+> conda activate pybias-env
 ```
 6.2) Export the active environment to a file
 ```
