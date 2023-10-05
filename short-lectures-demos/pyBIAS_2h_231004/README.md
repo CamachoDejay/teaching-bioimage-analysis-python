@@ -19,8 +19,9 @@ The Jupyter Notebook is available as a part of JupyterLab, so my recommendation 
 There are many ways to install Python [e.g.1](https://wiki.python.org/moin/BeginnersGuide/Download) & [e.g.2](https://realpython.com/installing-python/), but in a nutshell, there is something to keep in mind: different projects might need different flavours of Python with different sets of libraries. This is why it is strongly recommended that you manage your Python installations via “virtual environments”. You can think of virtual environments as an isolated set-up of Python that you wish to use including libraries and their versions. They can easily be created, modified and shared. It is for this reason that we suggest an installation workflow that includes the installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html), a tool that can manage multiple virtual environments. Anohter good recomedation is the use of [mamba](https://mamba.readthedocs.io/en/latest/index.html) a fast and corss-platform package manager.
 
 ### Examples
-1) From the article: ["Jupyter Notebooks for Generating and Distributing Bioimage Analysis Workflows"](https://analyticalscience.wiley.com/do/10.1002/was.0004000374)
-We will work on [this basic Jupyter notebook](https://github.com/CamachoDejay/MyFavouriteBIAStool_NEUBIAS/blob/main/Example.ipynb)
+1) Book 1 Rice Example From the article: ["Jupyter Notebooks for Generating and Distributing Bioimage Analysis Workflows"](https://analyticalscience.wiley.com/do/10.1002/was.0004000374)
+
+2) Book 2 based on data from one of the studets, data [available here](https://gunet-my.sharepoint.com/:f:/g/personal/rafael_camacho_gu_se/Er04f61cMRlJlxTPy5liik0BhMOvadVSxtrXcPRQP4ecGw?e=fMtDOY)
 
 ### Instalation
 ### 1.1) Installing miniconda: 
