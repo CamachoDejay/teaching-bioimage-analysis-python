@@ -1,3 +1,5 @@
+# based on a question by a students that uses Matplotlib and Seaborn
+# 
 # simple code that shows how to leave matplotlib and seaborn figures open
 # while running a script.
 
