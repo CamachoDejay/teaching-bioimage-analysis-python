@@ -17,7 +17,7 @@ By the end of this session, you will:
 
 ## Prerequisites
 
-This eyar we will benefit from BAND the Bioimage ANalysis Desktop - a Desktop-as-a-Service cloub-based platform that generates a desktop environment packed with bioimage analysis tools. This will simplify the installation procedures and let us concentrate on the content of the course. Moreover I provide below a full guide on how to install the required programs on your own computer.
+This year we will benefit from BAND the Bioimage ANalysis Desktop - a Desktop-as-a-Service cloub-based platform that generates a desktop environment packed with bioimage analysis tools. This will simplify the installation procedures and let us concentrate on the content of the course. Moreover I provide below a full guide on how to install the required programs on your own computer.
 
 ## What is Python?
 
