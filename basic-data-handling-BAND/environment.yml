@@ -1,0 +1,12 @@
+name: phd-bias-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - ipykernel
+  - jupyterlab
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
