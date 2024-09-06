@@ -6,7 +6,7 @@ List of resources used during different courses, workshops, events, etc.
 
 ## Basic Introduction to Data Hanlding in Python
 
-* The material for the intro can be found [here](./basic-data-handling).
+* Material for Data Hanlding in Python, PhD Course SC00028: Introductory course to Image Analysis in Life Science [here](./basic-data-handling-BAND/).
 
 ## Quick demo on image analysis using Python
 
