@@ -6,14 +6,18 @@ In this session, we will focus on what to do after obtaining result tables (e.g.
 
 By the end of this session, you will:
 
-- Have a basic understanding of Python for data exploration.
-- Know how to install Data Science packages using conda environments.
-- Be able to use VS Code to run and create Jupyter Notebooks.
-- Learn how to store and share your environment via `.yml` files.
-- Know how to load `.csv` files into Python.
+- Develop a basic understanding of Python for data exploration.
+- Learn how to load `.csv` files into Python.
 - Understand how to concatenate (combine) data tables.
-- Be able to export data tables into `.csv` files or Excel sheets.
-- Know how to create basic plots, such as scatter plots, bar charts, and violin plots.
+- Gain the ability to export data tables into `.csv` files or Excel sheets.
+- Be able to create basic plots, such as scatter plots, bar charts, and violin plots.
+- Perform basic data analysis and statistical tests.
+
+### Extra information for self-study:
+- Learn how to install Data Science packages using conda environments.
+- Use VS Code to run and create Jupyter Notebooks.
+- Understand how to store and share your environment via `.yml` files.
+
 
 ## Prerequisites
 
@@ -26,6 +30,18 @@ Rather than reinvent the wheel, it's best to consult established resources for a
 For our course, the key question is: [Why is Python so widely used in data science?](https://learnpython.com/blog/why-python-used-for-science/) This resource dives into the reasons Python has become the go-to language for data analysis and scientific computing.
 
 By the end of this session, you'll gain an understanding of why so many people choose Python for data analysis, ranging from basic tasks to more advanced, complex workflows.
+
+## Use Cases
+
+Please note that we will be skipping the installation procedure outlined below, as we will be using BAND for this course. However, interested students are encouraged to try the installation on their own laptops during the week and bring them to the session on Friday. During coffee breaks, we can discuss any issues you might encounter while installing Jupyter Notebooks on your machine.
+
+1. [Book 1:](./Book_01.ipynb) How to read a CSV file into a data table.
+2. [Book 2:](./Book_02.ipynb) How to create simple plots with Pandas and Seaborn.
+3. [Book 3:](./Book_03.ipynb) How to concatenate data frames.
+4. [Book 4:](./Book_04.ipynb) How to create more elaborate plots using Seaborn.
+5. [Book 5:](./Book_05.ipynb) Statistical tests using Pandas and SciPy.
+6. [Book 6:](./Book_06.ipynb) A quick example of creating a pivot table.
+7. [Book 7:](./Book_07.ipynb) A TrackMate example: Plotting Mean Speed Over Time for a Movie.
 
 
 ## Installation guide
@@ -179,6 +195,17 @@ To make our current environment (kernel) available to JupyterLab we can use:
 ```bash
 ipython kernel install --user --name=bias-env
 ```
+## Using Jupyter Notebooks
+
+You are now ready to use Jupyter notebooks via Jupyter Lab. Simply open your terminal and run the following command:
+
+```bash
+jupyter lab
+```
+A new tab will open in your web browser, and that's it—you’re good to go! 
+
+If you prefer to use VS Code instead of Jupyter Lab, please follow the instructions provided below.
+ 
 
 ## Step 3 Using VS Code to create and run Jupyter Notebooks
 
@@ -222,9 +249,6 @@ ipython kernel install --user --name=bias-env
 
 S3.3 Run the Jupyter Notebook in VS Code once again
 
-## To continue working on our use case
-
-Now lets move to the example books in this repo.
 
 ## Where to go next
 
