@@ -30,7 +30,7 @@ By the end of this session, you'll gain an understanding of why so many people c
 
 ## Installation guide
 
-For this course, we recommend using **Miniforge**, a minimal conda installer that helps avoid the overhead of the full Anaconda distribution. Miniforge allows you to install only the necessary tools and packages, providing a lightweight and efficient setup. You can follow the installation guide here: [Miniforge Installation](https://github.com/conda-forge/miniforge).
+We recommend using **Miniforge**, a minimal conda installer that helps avoid the overhead of the full Anaconda distribution. Miniforge allows you to install only the necessary tools and packages, providing a lightweight and efficient setup. You can follow the installation guide here: [Miniforge Installation](https://github.com/conda-forge/miniforge).
 
 Additionally, you will need the following programs, which you can install by following the official guides:
 - [VS Code](https://code.visualstudio.com/docs) (for running and editing Jupyter Notebooks)
@@ -39,50 +39,52 @@ Additionally, you will need the following programs, which you can install by fol
 Each of these tools has excellent online tutorials and documentation to guide you through the installation process.
 
 
+## How to Install Python via Conda
 
-## How to install Python via conda
+To make things easier, we will be using [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) to install Python and manage our virtual environments. 
 
-To make things easier we will be using [conda to install python and manage our virtual environments.](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) Think of a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) as a box (directory) that contains a specific collection tools (e.g. Python + packages) that you have installed. The good thing is that you can have different boxes/environments, and if you change one environment, your other environments are not affected. To work with them we will then "activate" the box we want to use.
+Think of a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) as a "box" (or directory) that contains a specific collection of tools (e.g., Python + packages) that you have installed. The great thing about virtual environments is that you can have multiple boxes/environments, each tailored to a specific task or project. If you change or update one environment, your other environments remain unaffected.
 
-After working with FIJI during the course, the concept of virtual environments is very similar as having multiple versions of FIJI by keeping different copies in different folders.
+To work within a specific environment, we will "activate" the box we want to use.
 
-## Step 1: Creating a conda env with python 3.10
+If you've worked with FIJI before, the concept of virtual environments is similar to having multiple versions of FIJI, where each copy resides in a different folder, allowing you to manage versions independently.
 
-**Prerequisite** to go over these steps you need to have installed ```conda```, and the anaconda prompt on your computer.
+## Step 1: Creating a Conda Environment with Python 3.10
 
-S1.1 Open an Anaconda Promt:
+**Prerequisite:** To follow these steps, you need to have Conda installed, and access to the Miniforge prompt on your computer.
 
-* Go to Windows icon -> search for "anaconda" -> open Anaconda Prompt (Anaconda 3)
+### S1.1 Open the Miniforge Prompt:
+* On Windows: Click the Windows icon, search for "miniforge", and select **Miniforge Prompt**.
 
-S1.2 Create a new conda environment for Python using this command in the promt:
+### S1.2 Create a new Conda environment with Python 3.10:
 
+Run the following command in the Miniforge Prompt to create a new Conda environment named `bias-env`:
+
+```bash
+conda create -y -n bias-env -c conda-forge python=3.10
 ```
-> conda create -y -n bias-env -c conda-forge python=3.10
-```
 
-After ```conda``` has done its job you have created a new "box" containing a copy of Python version 3.9. The name of this environment is ```bias-env``` and as ```conda```channel we have used ```conda-forge```. Think of a conda channel as buying your products from a specific shop. ```conda-forge``` is my favorite store, but this discussion is a bit out of the scope of the session.
+After ```Conda``` has done its job, you have successfully created a new "box" (environment) containing a copy of Python version 3.10. The name of this environment is `bias-env`, and the Conda channel we used is `conda-forge`.
+
+Think of a Conda channel like choosing a specific shop to buy your products from. In this case, `conda-forge` is the shop we are using to get the packages we need. It’s a popular channel with a large collection of up-to-date and well-maintained packages. While this is a useful concept, going deeper into Conda channels is a bit out of the scope of this session.
 
 S1.3 Now activate your conda environment:
 
-```
-> conda activate bias-env
+```bash
+conda activate bias-env
 ```
 
 S1.4 Let us check the enviornment, by asking what python is available. Use the command:
 
-```
-> which python
-
-Python 3.10.xx | packaged by conda-forge |...
-
-> python --version
-
+```bash
+python --version
+Python 3.10.14
 ```
 
 S1.5 Activate Python. Use the command:
 
-```
-> python
+```bash
+python
 ```
 
 S1.6 lets do some basic math
@@ -150,9 +152,9 @@ S2.5 Select an interpreter (aka virtual environment)
 
 S2.6 Run again the file
 
-## What is a Jupyter Notebook
+## What is a Jupyter Notebook?
 
-Jupyter notebooks are a great tool for interactive programming in Data Science. [Look at this great article.](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) You can think of them as interactive books where we can "attach" a Python environment and interactively run pieces of code. Lets do a small demo so it is easier to understand.
+Jupyter notebooks are an excellent tool for interactive programming in Data Science. You can explore this [informative article](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4) to dive deeper into its benefits. Think of them as interactive notebooks where you can "attach" a Python environment and execute pieces of code in real-time, making it easy to visualize outputs and explore data. Let's do a small demo to better understand how they work.
 
 ## Installing jupyterlab in our virtual environment
 
@@ -161,16 +163,22 @@ This step can be skiped in this demo because we already have jupyterlab installe
 * Go to the Anaconda Prompt
   * If you closed it, then activate again the bias-env. Follow steps S1.1 and S1.3
 
-```conda install -c conda-forge jupyterlab```
+```bash
+conda install -c conda-forge jupyterlab
+```
 
 To test that it is properly installed you can run this in the command line
 
-```where jupyter```
+```bash
+where jupyter
+```
 
 ### Make the virtual environment available to JupyterLab
 To make our current environment (kernel) available to JupyterLab we can use:
 
-```ipython kernel install --user --name=bias-env```
+```bash
+ipython kernel install --user --name=bias-env
+```
 
 ## Step 3 Using VS Code to create and run Jupyter Notebooks
 
@@ -208,7 +216,9 @@ S3.2 Optional Installing ```ipykernel```
 
 Then we make the current environment available as a jupyter kernel
 
-```ipython kernel install --user --name=bias-env```
+```bash
+ipython kernel install --user --name=bias-env
+```
 
 S3.3 Run the Jupyter Notebook in VS Code once again
 
