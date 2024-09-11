@@ -48,7 +48,7 @@ Please note that we will be skipping the installation procedure outlined below, 
 
 We recommend using **Miniforge**, a minimal conda installer that helps avoid the overhead of the full Anaconda distribution. Miniforge allows you to install only the necessary tools and packages, providing a lightweight and efficient setup. You can follow the installation guide here: [Miniforge Installation](https://github.com/conda-forge/miniforge).
 
-Additionally, you will need the following programs, which you can install by following the official guides:
+Optionally, you might want to install the following programs by following the official guides:
 - [VS Code](https://code.visualstudio.com/docs) (for running and editing Jupyter Notebooks)
 - [Git](https://github.com/git-guides/install-git) (command line tools for version control - **optional**)
 
@@ -129,7 +129,7 @@ S1.8 lets get out of python
 >>> quit()
 ```
 
-## VS Code
+## OPTIONAL: VS Code
 
 VS Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux. Using its extensions it is a great tool for Python and Jupyter books.
 
