@@ -24,11 +24,11 @@ There are many ways to install Python [e.g.1](https://wiki.python.org/moin/Begin
 2) [Book 2](./book-02-quick-example-BIAS.ipynb) based on data from one of the studets, data [available here](https://gunet-my.sharepoint.com/:f:/g/personal/rafael_camacho_gu_se/Er04f61cMRlJlxTPy5liik0BhMOvadVSxtrXcPRQP4ecGw?e=fMtDOY)
 
 ### Instalation
-### 1.1) Installing miniconda: 
-Miniconda is a free minimal installer for conda. The latest installation instructions can be found at:
-https://docs.conda.io/en/latest/miniconda.html  
+### 1.1) Installing miniforge: 
+Miniforge is a free minimal installer for conda. The latest installation instructions can be found at:
+https://github.com/conda-forge/miniforge   
 
-Once installed you should have access to the “Anaconda Prompt”. To test your installation, simply open the Anaconda Prompt, and then write the command:
+Once installed you should have access to the “Miniforge Prompt”. To test your installation, simply open the Miniforge Prompt, and then write the command:
 ```
 > Python
 ```
