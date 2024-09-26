@@ -10,6 +10,6 @@ List of resources used during different courses, workshops, events, etc.
 
 ## Quick demo on image analysis using Python
 
-* 2023-10-05 2h Demo for python programming course at GU [here](./short-lectures-demos/pyBIAS_2h_240926/)
+* 2024-09-26 2h Demo for python programming course at GU [here](./short-lectures-demos/pyBIAS_2h_240926/)
 * 2022-09-28 Demo for python programming course at GU [here](./short-lectures-demos/quick_demo_220928/)
 * 2022-05-03 Demo for CF [here](./short-lectures-demos/quick_demo_220503/)
