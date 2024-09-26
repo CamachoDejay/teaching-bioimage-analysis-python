@@ -21,7 +21,7 @@ There are many ways to install Python [e.g.1](https://wiki.python.org/moin/Begin
 ### Examples
 1) [Book 1](./book-01-rice-example.ipynb) Rice Example From the article: ["Jupyter Notebooks for Generating and Distributing Bioimage Analysis Workflows"](https://analyticalscience.wiley.com/do/10.1002/was.0004000374)
 
-2) [Book 2](./book-02-quick-example-BIAS.ipynb) based on data from one of the studets, data [available here](https://gunet-my.sharepoint.com/:f:/g/personal/rafael_camacho_gu_se/Er04f61cMRlJlxTPy5liik0BhMOvadVSxtrXcPRQP4ecGw?e=fMtDOY)
+2) [Book 2](./book-02-quick-example-BIAS.ipynb) based on data from one of the students from 2023
 
 ### Instalation
 ### 1.1) Installing miniforge: 
